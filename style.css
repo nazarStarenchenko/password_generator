@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --basic-background: rgb(17 17 21);
+  --main-background: rgb(36 35 42);
+  --special-color: rgb(164 255 175);
+  --font-color: rgb(112 111 120);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+body {
+  background-color: var(--basic-background);
+}
+
+header {
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 18%;
+  left: 50%;
+  background-color: var(--basic-background);
+  color: var(--font-color);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+#main {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 280px;
+  background-color: var(--main-background);
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+#length {
+  width: 50px;
+}
+
+.input-wrapper {
+  padding-bottom: 20px;
+}
+
+
+#password{
+  background-color: var(--main-background);
+  color: var(--special-color);
+  width: 300px;
+  height: 60px;
+  overflow: scroll;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+  font-weight: 100;
+
+  position: absolute;
+  top: 24%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  height: 35px;
+  padding: 5px 10px;
+  width: 70%;
+  margin-left: 15%;
+  background-color: var(--basic-background);
+  color: #f4f4f4;
+  border: none;
+  border-radius: 20px;
+
+}
+
+button:hover {
+  color: var(--basic-background);
+  background-color: var(--special-color); 
+  transition-property: background-color, color, border;
+  transition-duration: .4s;
+}
